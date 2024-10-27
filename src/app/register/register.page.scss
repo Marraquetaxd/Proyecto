@@ -1,0 +1,54 @@
+
+ion-content {
+  --background: #121212;  
+  --ion-text-color: white;
+}
+ion-label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #bbb !important;
+}
+/*ion-datetime {
+  --background: #1e1e1e;
+  height: 44px;
+  min-height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  &.datetime-expanded {
+    height: auto;
+    min-height: 280px; 
+  }
+}
+
+ion-item.datetime-item {
+  background: transparent;
+  border-width: 0;
+  --inner-padding-end: 0;
+  --padding-start: 0;
+}
+.datetime-text {
+  font-size: 16px;
+  color: #ffffff;
+}*/
+.usuario{
+  border-radius: 10px;
+}
+.nombre{
+  padding: 20px;
+}
+ion-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.tipo{
+  width: fit-content;
+  margin: 10px auto;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

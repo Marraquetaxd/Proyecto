@@ -1,0 +1,147 @@
+:root {
+  --page-background: #00001f;
+  --card-background: rgba(255, 255, 255, 0.05);
+  --input-background: rgba(255, 255, 255, 0.1);
+  --primary-color: #4f46e5;
+  --hover-color: #4338ca;
+  --error-color: #ef4444;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+.auth-content {
+  --background: var(--page-background);
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: var(--card-background);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+.auth-form {
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.custom-item {
+  --background: var(--input-background);
+  --border-color: var(--border-color);
+  --border-radius: 12px;
+  --border-width: 1px;
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  --inner-padding-end: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+    --border-color: var(--primary-color);
+  }
+
+  ion-label {
+    color: var(--text-secondary) !important;
+    font-size: 0.9rem;
+    
+    ion-icon {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  ion-input {
+    --color: var(--text-primary);
+    --placeholder-color: var(--text-secondary);
+    font-size: 1rem;
+  }
+}
+
+.button-group {
+  margin-top: 2rem;
+}
+
+ion-button {
+  --border-radius: 12px;
+  height: 48px;
+  font-weight: 600;
+  
+  ion-icon {
+    margin-right: 0.5rem;
+  }
+}
+
+.login-button {
+  
+  --background-hover: var(--hover-color);
+  margin-bottom: 1rem;
+}
+
+.register-button {
+  --border-color: var(--border-color);
+  --color: var(--text-primary);
+  --background-hover: var(--input-background);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+  
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  span {
+    padding: 0 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--error-color);
+  color: var(--error-color);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  ion-icon {
+    font-size: 1.25rem;
+  }
+}
